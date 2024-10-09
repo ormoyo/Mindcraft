@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.ormoyo.mindcraft.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "mindcraft.refmap.json",
+  "mixins": [
+    "MixinLivingEntity",
+    "MixinMobEntity",
+    "MixinPlayerEntity"
+  ],
+  "client": [
+    "MixinClientPlayerEntity",
+    "MixinMouseHelper"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
